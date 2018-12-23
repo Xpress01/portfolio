@@ -1,0 +1,39 @@
+.header {
+  &__background {
+    background-color: $color-primary-light; 
+  }
+
+  &__city {
+    width: 100%;
+  }
+
+  &__city-pic {
+    width: 100%; 
+  }
+
+  &__city-wheel {
+    position: absolute;
+    margin-top: 26.5%;
+    right: 20.55%;
+    width: 14vw;
+    animation: wheel-animation 10s linear infinite;
+
+    @keyframes wheel-animation {
+      from {transform: rotate(0deg);}
+      to {transform: rotate(360deg);}
+    }
+  }
+
+  &__city-rocket {
+    position: absolute;
+    width: .32%;
+    left: 26%;
+    margin-top: 38%;
+    animation: rocket-launch 7s linear 3s infinite;
+
+    @keyframes rocket-launch {
+      0% {margin-top: 38%}
+      100% {margin-top: -5%}
+    }
+  }
+}
