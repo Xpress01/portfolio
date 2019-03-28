@@ -1,0 +1,515 @@
+.about {
+
+  &__row {
+    margin-bottom: 3em; 
+  }
+
+  &__title {
+    background: linear-gradient(to bottom right, $color-primary-light, $color-primary-dark);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center; 
+  }
+
+  &__text-container {
+    font-size: 20px;
+    line-height: 2;
+    text-align: center;
+    margin-bottom: 3em; 
+    padding: .5em 0;
+
+    @media only screen and (max-width: $bk-md) {
+      margin-bottom: 1.5em; 
+    }
+    
+    & p {
+      @media only screen and (max-width: $bk-md) {
+        padding: 1em 0; 
+      }
+    }
+  }
+
+  &__contact-link-container {
+    @media only screen and (min-width: $bk-md) {
+      margin-top: 2em;  
+    }
+  }
+  
+  &__contact-link {
+    color: white;
+    background: $color-secondary;
+    border: 2px solid transparent; 
+    border-radius: 5px;
+    padding: .5em 1em;
+    text-transform: uppercase;
+    transition: all .2s; 
+
+    &:hover {
+      text-decoration: none; 
+      background: $color-secondary-dark; 
+      color: white; 
+      font-weight: 700; 
+    }
+  }
+
+  &__subtitle {
+    color: $color-secondary-dark;
+    letter-spacing: 2px;
+    font-size: 4em;
+    font-weight: 700;
+    text-align: center; 
+    margin-bottom: 2rem;
+  }
+
+  &__main-col {
+    &:not(:last-child) {
+      @media only screen and (max-width: $bk-md) {
+        margin-bottom: 8em;
+      }
+    }
+  }
+
+  &__icon-list {
+    list-style: none; 
+    display: flex; 
+    padding-left: 0; 
+
+    & li {
+      margin-right: 2em;
+    }
+  }
+
+  &__icon {
+    font-size: 6.5em; 
+    
+    @media only screen and (min-width: $bk-md) and (max-width: 1131px) {
+      font-size: 4.6em; 
+    }
+  }
+
+  &__icon-container {
+    text-align: center;
+  }
+
+  &__text {
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: .25px;
+    margin-top: .5em;
+    color: #4a4a4a;
+  }
+}
+
+
+.portfolio {
+  background: $color-primary; /* Old browsers */
+  background: -moz-linear-gradient(-45deg, $color-primary 0%, #00bbff 50%, #00bbff 51%, $color-primary 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, $color-primary 0%,#00bbff 50%,#00bbff 51%, $color-primary 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, $color-primary 0%,#00bbff 50%,#00bbff 51%,$color-primary 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$color-primary', endColorstr='$color-primary',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+
+  &__title {
+    text-align: right;
+    color: white;
+    text-transform: uppercase;
+
+    @media only screen and (max-width: $bk-md) {
+      text-align: center; 
+    }
+  }
+
+  &__row {
+    margin-bottom: 2.5em;
+  }
+
+  &__col {
+    &:not(:last-child) {
+      @media only screen and (max-width: $bk-lg) {
+        margin-bottom: 2.5em;
+      }
+    }
+  }
+
+  &__link {
+    text-decoration: none; 
+
+    &:hover {
+      text-decoration: none; 
+    }
+  }
+
+  &__item-container {
+    position: relative; 
+    -webkit-box-shadow: 0px 4px 6px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 4px 6px -1px rgba(0,0,0,0.75);
+    box-shadow: 0px 4px 6px -1px rgba(0,0,0,0.75);
+    transition: all .5s; 
+
+    &:hover {
+      cursor: pointer; 
+      box-shadow: 0px 6px 11px 7px rgba(0, 0, 0, 0.8);
+
+      @media only screen and (max-width: $bk-md) {
+        box-shadow: 0px 4px 6px -1px rgba(0,0,0,0.75);
+        cursor: pointer;
+      }
+    }
+
+    &:hover .portfolio__item-logo {
+      transform: scale(0.0);
+      visibility: hidden;
+    }
+
+    &:hover ~ .portfolio__list {
+      margin-top: 25px; 
+      text-decoration: none;
+
+      @media only screen and (max-width: $bk-md) {
+        margin-top: 10px;
+      }
+    }
+
+  }
+
+  &__item-logo {
+    position: absolute;
+    z-index: 99;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    top: 10%;
+    left: 10%;
+    transition: all .5s;
+
+    @media only screen and (max-width: $bk-md) {
+      visibility: hidden;
+    }
+
+    &--ecomfees {
+      top: 37%;
+      left: 25%;
+    }
+
+    &--ezgiftex {
+      top: 23%;
+      left: 25%;
+    }
+
+    &--precious {
+      top: 29%;
+      left: 25%;
+    }
+
+    &--secc {
+      top: 22%;
+      left: 25%;
+    }
+  }
+
+  &__item-img-container {
+    position: relative; 
+    transition: all .5s;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 1;
+      background: rgba(0,0,0,0.85);
+      transition: all .5s;
+
+      @media only screen and (max-width: $bk-md) {
+        background: rgba(0,0,0,0.0);
+      }
+    }
+
+    &:hover {
+      transform: scale(1.05);
+
+      @media only screen and (max-width: $bk-md) {
+        transform: none; 
+      }
+    }
+
+    &:hover::before {
+      background: rgba(0,0,0,0.0);
+    }
+  }
+
+  &__item-img {
+    width: 100%;
+    
+    
+
+    &:hover {
+      cursor: pointer; 
+    }
+  }
+
+  &__list {
+    display: flex; 
+    justify-content: flex-end;
+    list-style: none;
+    margin-top: -25px;
+    padding-left: 0;
+    z-index: 0;
+    transition: margin-top .5s;
+
+    @media only screen and (min-width: 1200px) and (max-width: 1260px) {
+      justify-content: center; 
+    }
+
+    @media only screen and (min-width: $bk-md) {
+      min-width: 494px;
+    }
+
+    @media only screen and (max-width: $bk-sm) {
+      margin-top: 10px; 
+      flex-wrap: wrap; 
+    }
+  }
+
+  &__list-item {
+    background-color: $color-secondary;
+    color: white;
+    font-size: 1.2em;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    min-width: 2em;
+    padding: .5em 1em;
+    border-radius: 35px;
+    line-height: 1;
+    white-space: nowrap;
+
+    &:not(:last-child) {
+      margin-right: .25em;
+    }
+
+    @media only screen and (min-width: 1200px) and (max-width: 1260px) {
+      font-size: 1.1em; 
+    }
+
+    @media only screen and (max-width: 595px) {
+      margin-top: 3px;
+    }
+  }
+}
+
+.contact {
+  background: $color-primary-dark;
+  margin-top: -71px;
+  margin-bottom: 0; 
+
+  &__title {
+    color: white; 
+
+    @media only screen and (max-width: $bk-md) {
+      text-align: center; 
+    }
+  }
+
+  &__sub-heading {
+    color: $color-primary-light; 
+
+    @media only screen and (max-width: $bk-md) {
+      text-align: center; 
+    }
+  }
+
+  &__sub-form-container {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 4.5em; 
+
+    @media only screen and (max-width: $bk-md) {
+      flex-direction: column;
+      margin-bottom: 0;
+    }
+  }
+
+  &__input {
+    width: 30%;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    padding-left: .5em;
+
+    @media only screen and (max-width: $bk-md) {
+      width: 100%;
+    }
+
+    
+
+    &:not(:last-child) {
+      @media only screen and (max-width: $bk-md) {
+        margin-bottom: 3em;
+      }
+    }
+
+    &:focus + .contact__input-label {
+      top: -110%;
+      opacity: 1; 
+      visibility: visible;
+    }
+
+    &:focus::placeholder {
+      opacity: 0;
+    }
+  }
+
+  &__input-label {
+    position: absolute; 
+    font-size: 16px; 
+    text-transform: uppercase; 
+    color: white; 
+    top: 0%; 
+    transition: all .3s; 
+    opacity: 0;
+    visibility: hidden;
+
+    @media only screen and (max-width: $bk-md) {
+      position: absolute; 
+    }
+
+    &--name {
+      left: .7%; 
+
+      @media only screen and (max-width: $bk-md) {
+        top: -15% !important;
+        left: 0; 
+        opacity: 1;
+        visibility: visible; 
+      }
+    }
+
+    &--email {
+      left: 35.5%;
+
+      @media only screen and (max-width: $bk-md) {
+        top: 19% !important;
+        left: 0; 
+        opacity: 1;
+        visibility: visible; 
+      }
+    }
+
+    &--phone {
+      left: 70.5%;
+
+      @media only screen and (max-width: $bk-md) {
+        top: 53% !important;
+        left: 0; 
+        opacity: 1;
+        visibility: visible; 
+      }
+    }
+  }
+
+  &__message {
+    width: 100%;
+    border-radius: 5px;
+    font-size: 16px;
+    padding-left: 0.5em;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    height: 20em;
+    resize: none; 
+
+    &:focus + .contact__message-label {
+      top: -8.5%; 
+      opacity: 1; 
+      visibility: visible;
+    }
+
+    &:focus::placeholder {
+      opacity: 0;
+    }
+  }
+
+  &__message-label {
+    position: absolute;
+    font-size: 16px;
+    text-transform: uppercase; 
+    color: white;
+    top: 0.5%;
+    left: 3%;
+    transition: all .3s;
+    opacity: 0;
+    visibility: hidden; 
+
+    @media only screen and (max-width: $bk-md) {
+      opacity: 1;
+      visibility: visible; 
+      top: -8%;
+      left: 16px
+
+    }
+  }
+
+  &__button-container {
+    text-align: right; 
+    margin-top: 1em;
+  }
+
+  &__button {
+    background: $color-secondary;
+    border: none; 
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    padding: .25em 2em;
+    cursor: pointer;
+
+    &:hover {
+      background: $color-secondary-dark; 
+    }
+  }
+
+  &__profile {
+    text-align: center; 
+    position: relative;
+    top: 5%;
+
+    @media only screen and (max-width: $bk-md) {
+      margin-bottom: 8em; 
+    }
+  }
+
+  &__profile-img {
+    width: 18em;
+    border-radius: 50%;
+    border: 5px solid white;
+    margin-bottom: 3em;
+
+    @media only screen and (max-width: $bk-md) {
+      margin-bottom: 1.5em; 
+    }
+  }
+
+  &__profile-icon-container {
+    display: flex;
+    justify-content: space-evenly;
+    width: 70%;
+    margin: 0 auto;
+    font-size: 3.5em; 
+  }
+
+  &__profile-link {
+    color: $color-primary-light; 
+    transition: all .3s; 
+
+    &:hover {
+      text-decoration: none;  
+      transform: scale(1.1);
+      color: white; 
+    }
+  }
+}

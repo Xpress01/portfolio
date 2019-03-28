@@ -1,0 +1,14 @@
+.section {
+  padding: 6em 9%;
+  margin-bottom: 7em;
+  
+  &__title {
+    font-size: 7.5em; 
+    font-weight: 600;
+    margin-bottom: .75em; 
+
+    @media only screen and (max-width: $bk-md) {
+      font-size: 7em; 
+    }
+  }
+}

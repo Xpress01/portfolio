@@ -1,32 +1,312 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Vijay Ramdass | Front End Web Developer</title>
-  </head>
-  <body>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Vijay Ramdass | Front End Web Developer</title>
+</head>
+<body>
 
-    <header class="header">
-      <div class="header__background">
-        <div class="header__city">
-          <img src="img/wheel.png" alt="wheel" class="header__city-wheel">
-          <div class="header__rocket-animation">
-            <img src="img/rocket.svg" alt="rocket" class="header__city-rocket">
-            <div class="header__city-rocket-flame"></div>
+
+  <!-- <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="nav__logo-container">
+      <div class="nav__logo-name">V<span class="small-uppercase">ijay</span> R<span class="small-uppercase">amdass</span></div>
+      <div class="nav__logo-position">Front-End Web Developer</div>
+    </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="nav__menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav nav__link-container">
+        <li class="nav-item">
+          <a class="nav-link" href="#about">about</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#portfolio">Portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav> -->
+
+  <header class="header section">
+    <div class="header__title-container">
+      <div class="header__title-name">Vijay Ramdass</div>
+      <div class="header__title-role">Web Developer</div>
+    </div>
+    <div class="header__break">--</div>
+    <div class="header__description-container">
+      <p>
+        Hi, I'm Vijay and I'm a web developer from Orlando, FL. I have a passion for building websites that are fast, 
+        responsive and dynamic. 
+      </p>
+      <p>
+        My goal is to find a place where I can contribute my skills to a team, learn from others, share my knowledge, 
+        and grow as a developer. 
+      </p>
+      <p class="header__contact-link-container">
+        <a href="#contact" class="header__contact-link">Let's Chat!</a>
+      </p>
+    </div>
+  </header>
+  <!-- !!!!!!!!!!!!!!!!! CITY HEADER !!!!!!!!!!!!!!!!! -->
+  <!-- <header class="header">
+    <div class="header__background">
+      <div class="header__city">
+        <img src="img/wheel.png" alt="wheel" class="header__city-wheel">
+        <div class="header__rocket-animation">
+        <img src="img/rocket.svg" alt="rocket" class="header__city-rocket">
+        <div class="header__city-rocket-flame"></div>
+        </div>
+        <img src="img/header-bg.png" alt="city-pic" class="header__city-pic">
+      </div>
+    </div>
+  </header> -->
+
+  <section class="section about" id="about">
+    <h1 class="section__title about__title">A<span class="small-uppercase">bout</span></h1>
+    <!-- <div class="about__text-container">
+      <p>
+        Hi, I'm Vijay and I'm a web developer from Orlando, FL. I have a passion for building websites that are fast, 
+        responsive and dynamic. 
+      </p>
+      <p>
+        My goal is to find a place where I can contribute my skills to a team, learn from others, share my knowledge, 
+        and grow as a developer. 
+      </p>
+      <p class="about__contact-link-container">
+        <a href="#contact" class="about__contact-link">Let's Chat!</a>
+      </p>
+    </div> -->
+    <div class="row">
+      <div class="col-12 col-lg-4 about__main-col">
+        <h2 class="about__subtitle">F<span class="small-uppercase">ront-End</span></h2>
+        <div class="row mb-4">
+          <div class="col">
+              <div class="about__icon-container">
+                  <span class="icon-html-five about__icon"></span>
+                  <div class="about__text">HTML5</div>
+                </div>
           </div>
-          <img src="img/header-bg.png" alt="city-pic" class="header__city-pic">
+          <div class="col">
+              <div class="about__icon-container">
+                  <span class="icon-css3 about__icon"></span>
+                  <div class="about__text">Css3</div>
+                </div>
+          </div>
+          <div class="col">
+              <div class="about__icon-container">
+                  <span class="icon-javascript about__icon"></span>
+                  <div class="about__text">JavaScript</div>
+                </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+              <div class="about__icon-container">
+                  <span class="icon-sass about__icon"></span>
+                  <div class="about__text">Sass</div>
+                </div>
+          </div>
+          <div class="col">
+              <div class="about__icon-container">
+                  <span class="icon-bootstrap about__icon"></span>
+                  <div class="about__text">Bootstrap</div>
+                </div>
+          </div>
+          <div class="col">
+              <div class="about__icon-container">
+                  <span class="icon-react about__icon"></span>
+                  <div class="about__text">React</div>
+                </div>
+          </div>
         </div>
       </div>
-    </header>
+      <div class="col-12 col-lg-4 about__main-col">
+          <h2 class="about__subtitle">B<span class="small-uppercase">ack-End</span></h2>
+          <div class="row justify-content-center">
+            <div class="col-4">
+                <div class="about__icon-container">
+                    <span class="icon-node-dot-js about__icon"></span>
+                    <div class="about__text">NodeJS</div>
+                  </div>
+            </div>
+            <div class="col-4">
+                <div class="about__icon-container">
+                    <span class="icon-php about__icon"></span>
+                    <div class="about__text">Php</div>
+                  </div>
+            </div>
+          </div>
+      </div>
+      <div class="col-12 col-lg-4 about__main-col">
+          <h2 class="about__subtitle">T<span class="small-uppercase">ools</span></h2>
+          <div class="row">
+            <div class="col">
+                <div class="about__icon-container">
+                    <span class="icon-git about__icon"></span>
+                    <div class="about__text">Git</div>
+                  </div>
+            </div>
+            <div class="col">
+                <div class="about__icon-container">
+                    <span class="icon-adobephotoshop about__icon"></span>
+                    <div class="about__text">Photoshop</div>
+                  </div>
+            </div>
+            <div class="col">
+                <div class="about__icon-container">
+                    <span class="icon-npm about__icon"></span>
+                    <div class="about__text">npm</div>
+                  </div>
+            </div>
+          </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="section portfolio" id="portfolio">
+    <h1 class="section__title portfolio__title">P<span class="small-uppercase">ortfolio</span></h1>
+        <div class="row portfolio__row">
+          <div class="col-12 col-xl-6 portfolio__col">
+            <a href="http://www.ezgiftex.com" target="_blank" class="portfolio__link">
+              <div class="portfolio__item-container">
+                <img src="/img/ezgiftex.png" alt="EZgiftEX" class="portfolio__item-logo portfolio__item-logo--ezgiftex">
+                <div class="portfolio__item-img-container">
+                  <img src="/img/site-ezgiftex.PNG" alt="EZgiftEX" class="portfolio__item-img">
+                </div>
+              </div>
+              <ul class="portfolio__list">
+                <li class="portfolio__list-item">Custom Web App</li>
+                <li class="portfolio__list-item">JavaScript</li>
+                <li class="portfolio__list-item">PHP</li>
+                <li class="portfolio__list-item">SASS</li>
+                <li class="portfolio__list-item">Flexbox</li>
+                <li class="portfolio__list-item">Ajax</li>
+              </ul>
+            </a>
+          </div>
+          <div class="col-12 col-xl-6 portfolio__col">
+            <a href="http://www.ecomfees.com" target="_blank" class="portfolio__link">
+              <div class="portfolio__item-container">
+                <img src="/img/ecomfees.png" alt="Ecomfees" class="portfolio__item-logo portfolio__item-logo--ecomfees">
+                <div class="portfolio__item-img-container">
+                  <img src="/img/site-ecomfee.PNG" alt="Ecomfees" class="portfolio__item-img">
+                </div>
+              </div>
+              <ul class="portfolio__list">
+                  <li class="portfolio__list-item">Custom Web App</li>
+                  <li class="portfolio__list-item">JavaScript</li>
+                  <li class="portfolio__list-item">SASS</li>
+                  <li class="portfolio__list-item">Flexbox</li>
+              </ul>
+            </a>       
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-xl-6 portfolio__col">
+            <a href="http://www.preciousgoldbuyers.com" target="_blank" class="portfolio__link">
+              <div class="portfolio__item-container">
+                <img src="/img/precious.png" alt="precious" class="portfolio__item-logo portfolio__item-logo--precious">
+                <div class="portfolio__item-img-container">
+                  <img src="/img/site-precious.PNG" alt="Precious-Bold-Buyers" class="portfolio__item-img">
+                </div>
+              </div>
+              <ul class="portfolio__list">
+                <li class="portfolio__list-item">Business Site</li>
+                <li class="portfolio__list-item">JavaScript</li>
+                <li class="portfolio__list-item">PHP</li>
+                <li class="portfolio__list-item">Bootstrap</li>
+                <li class="portfolio__list-item">SASS</li>
+                <li class="portfolio__list-item">Flexbox</li>
+              </ul>
+            </a>
+          </div>
+          <div class="col-12 col-xl-6 portfolio__col">
+            <a href="http://www.safeelectriccc.com" target="_blank" class="portfolio__link">
+              <div class="portfolio__item-container">
+                <img src="/img/secc.png" alt="secc" class="portfolio__item-logo portfolio__item-logo--secc">
+                <div class="portfolio__item-img-container">
+                  <img src="/img/site-safeelectric.PNG" alt="SECC" class="portfolio__item-img">
+                </div>
+              </div>
+              <ul class="portfolio__list">
+                <li class="portfolio__list-item">Business Site</li>
+                <li class="portfolio__list-item">JavaScript</li>
+                <li class="portfolio__list-item">PHP</li>
+                <li class="portfolio__list-item">Bootstrap</li>
+                <li class="portfolio__list-item">SASS</li>
+                <li class="portfolio__list-item">Flexbox</li>
+              </ul>
+            </a>
+          </div>
+        </div>
+  </section>
+
+  <section class="section contact" id="contact">
+    <h1 class="section__title contact__title">C<span class="small-uppercase">ontact</span></h1>
+    <h4 class="contact__sub-heading mb-5">Have any questions or want to work together? Feel free to contact me via email, linkedin, or send a message below</h4>
+    <div class="row">
+        <div class="col-md-4 order-md-2">
+            <div class="contact__profile">
+                <img src="img/DSC_2273-min.jpg" alt="profile" class="contact__profile-img">
+              <div class="contact__profile-icon-container">
+                <a href="mailto:vijay@ramdass.co" target="_blank" class="contact__profile-link contact__profile-link--mail">
+                  <span class="icon-envelop profile__icon "></span>
+                </a>
+                <a href="https://www.linkedin.com/in/vijay-ramdass-5010a657/" target="_blank" class="contact__profile-link contact__profile-link--linkedin"> 
+                  <span class="icon-linkedin profile__icon "></span>
+                </a>
+                <a href="https://github.com/Xpress01" target="_blank" class="contact__profile-link contact__profile-link--github">
+                  <span class="icon-github profile__icon"></span>
+                </a>
+              </div>
+            </div>
+        </div>
+      <div class="col-md-8 order-md-1">
+          <form class="contact__form-container">
+              <div class="contact__sub-form-container">
+                <input type="text" class="contact__input" id="form-input-name" name="name" placeholder="Name" required>
+                <span class="contact__input-label contact__input-label--name">Name</span>
+                <input type="email" class="contact__input" id="form-input-email" name="email" placeholder="Email" required>
+                <span class="contact__input-label contact__input-label--email">Email</span>
+                <input type="tel" class="contact__input" id="form-input-phone" name="phone" placeholder="Phone" required>
+                <span class="contact__input-label contact__input-label--phone">Phone</span>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <textarea class="contact__message" name="message" id="form-input-message" placeholder="Message" required></textarea>
+                  <span class="contact__message-label">Message</span>
+                </div>
+              </div>
+              <div class="contact__button-container">
+                <button class="contact__button">Submit</button>
+              </div>
+            </form>
+      </div>
+      
+    </div>
+    
+    
+    
+      
+  </section>
 
 
 
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-  </body>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
 </html>

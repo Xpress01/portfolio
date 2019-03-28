@@ -1,0 +1,79 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?wzgsie');
+  src:  url('../fonts/icomoon.eot?wzgsie#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?wzgsie') format('truetype'),
+    url('../fonts/icomoon.woff?wzgsie') format('woff'),
+    url('../fonts/icomoon.svg?wzgsie#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-node-dot-js:before {
+  content: "\e900";
+  color: #393;
+}
+.icon-npm:before {
+  content: "\e901";
+  color: #cb3837;
+}
+.icon-adobephotoshop:before {
+  content: "\e902";
+  color: #00c8ff;
+}
+.icon-php:before {
+  content: "\e903";
+  color: #777bb4;
+}
+.icon-react:before {
+  content: "\e904";
+  color: #61dafb;
+}
+.icon-bootstrap:before {
+  content: "\e905";
+  color: #563d7c;
+}
+.icon-sass:before {
+  content: "\e906";
+  color: #c69;
+}
+.icon-javascript:before {
+  content: "\e907";
+  color: #f7df1e;
+}
+.icon-envelop:before {
+  content: "\e945";
+}
+.icon-github:before {
+  content: "\eab0";
+}
+.icon-linkedin:before {
+  content: "\eac9";
+}
+.icon-html-five:before {
+  content: "\eae4";
+  color: #f26525; 
+}
+.icon-css3:before {
+  content: "\eae6";
+  color: #254bdd; 
+}
+.icon-git:before {
+  content: "\eae7";
+  color: #e84d31; 
+}

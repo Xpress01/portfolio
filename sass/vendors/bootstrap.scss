@@ -1,0 +1,31 @@
+//Nav 
+.navbar {
+  background: #0089b0;
+  padding: 1em 9%;
+  color: white; 
+}
+.navbar-toggler {
+  border-color: white !important; 
+  padding-top: 8px;
+}
+.navbar-collapse {
+  justify-content: flex-end; 
+} 
+
+.nav-item:not(:last-child) {
+  margin-right: 1em !important; 
+}
+
+.nav-link {
+  color: white !important; 
+  text-transform: uppercase;
+  font-size: 1.6em;
+  font-weight: 700;
+  padding: .8em 0 .3em 0 !important;
+  border-bottom: 2px solid transparent; 
+  transition: all .3s; 
+
+  &:hover {
+    border-bottom: 2px solid $color-secondary; 
+  }
+}

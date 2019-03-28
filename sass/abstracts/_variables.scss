@@ -1,7 +1,14 @@
-$color-primary: #00b9f1; 
-$color-primary-light: #9ce8ff; 
-$color-primary-dark: #0092be;
+$color-primary: #0089B0; 
+$color-primary-light: #00bbff; 
+$color-primary-dark: #00536A;
 
 $color-secondary-light: #fb6a4e; 
 $color-secondary: #f9320c;
 $color-secondary-dark: #cd2505;
+
+
+//Breakpoints
+$bk-xs: 575px;
+$bk-sm: 767px; 
+$bk-md: 991px; 
+$bk-lg: 1199px; 

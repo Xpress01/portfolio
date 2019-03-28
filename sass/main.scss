@@ -1,11 +1,15 @@
 @import 'abstracts/variables';
 
+@import 'vendors/bootstrap';
+@import 'vendors/icomoon';
+
 @import 'base/reset';
 @import 'base/typography';
 
 @import 'layout/navigation';
 @import 'layout/header';
 @import 'layout/footer';
+@import 'layout/section';
 
 @import 'components/buttons';
 
