@@ -8,15 +8,27 @@
 
   &__title-container {
     margin-top: 15em; 
+
+    @media only screen and (max-width: 665px) {
+      margin-top: 0;
+    }
   }
 
   &__title-name {
     font-size: 8em;
     color: white;
+
+    @media only screen and (max-width: 665px) {
+      font-size: 6em;
+    }
   }
 
   &__title-role {
     font-size: 4em; 
+
+    @media only screen and (max-width: 665px) {
+      font-size: 3em;
+    }
   }
   
   &__break {

@@ -1,6 +1,6 @@
 //Nav 
 .navbar {
-  background: #0089b0;
+  background: $color-primary;
   padding: 1em 9%;
   color: white; 
 }
@@ -28,4 +28,18 @@
   &:hover {
     border-bottom: 2px solid $color-secondary; 
   }
+}
+
+.modal-header, 
+.modal-footer {
+  background: $color-primary; 
+}
+
+.modal-header {
+  color: white; 
+}
+
+.modal-body {
+  padding: 2em;
+  font-size: 2em;
 }
