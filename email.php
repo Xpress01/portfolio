@@ -51,15 +51,15 @@ $mail->SMTPOptions = array(
                     )
                 );
 //Username to use for SMTP authentication - use full email address for gmail
-$mail->Username = "ezgiftex@gmail.com";
+$mail->Username = "";
 //Password to use for SMTP authentication
-$mail->Password = "Diablo!92501";
+$mail->Password = "";
 //Set who the message is to be sent from
-$mail->setFrom('exgiftex@gmail.com', 'VijayRamdass.com');
+$mail->setFrom('', '');
 //Set who the message is to be sent to
-$mail->addAddress('vijay@ramdass.co', 'Vijay Ramdass');
+$mail->addAddress('', '');
 //Set the subject line
-$mail->Subject = 'EcomFees Technical Support';
+$mail->Subject = 'Vijay Ramdass Contact';
 //Read an HTML message body from an external file, convert referenced images to embedded,
 //convert HTML into a basic plain-text alternative body
 //$mail->msgHTML(file_get_contents('contents.html'), __DIR__);
